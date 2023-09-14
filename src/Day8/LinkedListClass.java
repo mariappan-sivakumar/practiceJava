@@ -51,6 +51,5 @@ public class LinkedListClass {
         System.out.println(linkedList.pop()); //return first element and remove it if the list is empty throw error
         System.out.println(linkedList);
 
-
     }
 }

@@ -126,6 +126,27 @@ public class SetClass {
         treeSet.remove("Nepal");
         System.out.println("Treeset after remove nepal: "+treeSet);
         System.out.println(treeSet.descendingSet());
+
+//        Using Comparator in TreeSet
+        TreeSet<String> treeSet1=new TreeSet<>(new Comparator<String>() {
+            @Override
+            public int compare(String o1, String o2) {
+
+                return o1.compareTo(o2);
+            }
+        });
+        TreeSet<String> treeSet2=new TreeSet<>(new Comparator<String>() {
+            @Override
+            public int compare(String o1, String o2) {
+                Integer i1=o1.length();
+                Integer i2=o2.length();
+                return i1.compareTo(i2);
+            }
+        });
+        treeSet1.addAll(treeSet);
+        treeSet2.addAll(treeSet);
+        System.out.println("Reverse order using Comparator"+treeSet1);
+        System.out.println("Order o basis of length of string: "+treeSet2);
     }
 }
 
