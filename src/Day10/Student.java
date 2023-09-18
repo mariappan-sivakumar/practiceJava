@@ -76,5 +76,6 @@ class Classroom{
         Student jeya=new Student("Jeya", 4);
         jeya.enterMark();
         System.out.println(Student.rankOrder(mari,raj,balaji,jeya));
+        System.out.println(Student.rollNoOrder(mari,raj,balaji,jeya));
     }
 }

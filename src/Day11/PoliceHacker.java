@@ -31,7 +31,7 @@ public class PoliceHacker {
             }
             return this.password==password;
         }
-    }
+    }   
 
     /**
      * HackerThread is the abstract class it contains private variable vault to get the vault object and constructor to get vault object and set name and priority of the thread
