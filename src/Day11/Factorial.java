@@ -15,11 +15,11 @@ public class Factorial {
         }
         for (Thread thread :
                 factorialThreads) {
-            thread.setDaemon(true);
+//            thread.setDaemon(true);
             thread.start();
         }
         for (Thread thread: factorialThreads){
-            thread.join(1000);
+            thread.join(100);
         }
         for (int i = 0; i < factorialThreads.size(); i++) {
             FactorialThread factorialThread= factorialThreads.get(i);
